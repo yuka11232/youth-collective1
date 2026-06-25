@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<link rel="icon" href="assets/logos/youth-collective-logo.png" type="image/png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/backend-ui.css" />
+<link rel="stylesheet" href="css/admin.css" />
+<title>Admin | Youth Collective</title>
+</head>
+<body class="admin-body">
+
+  <!-- Top bar -->
+  <header class="admin-topbar">
+    <a class="admin-topbar-brand" href="index.html">
+      Youth Collective <span>/ Admin</span>
+    </a>
+    <div class="admin-topbar-right">
+      <span class="admin-user-badge" id="admin-user-name"></span>
+      <button class="admin-btn-sm" id="admin-logout-btn">Log out</button>
+      <a class="admin-btn-sm" href="index.html">← Site</a>
+    </div>
+  </header>
+
+  <!-- Loading state shown while auth is checked -->
+  <div id="view-loading" style="text-align:center;padding:5rem 1rem;color:#9ca3af;font-family:inherit">
+    Checking access…
+  </div>
+
+  <!-- ── Auth / Setup view ───────────────────────────────────────────────── -->
+  <div id="view-auth" style="display:none">
+    <div class="admin-auth-wrap">
+      <div class="admin-auth-card">
+        <h1>Admin setup</h1>
+        <p class="admin-auth-sub" id="setup-sub">
+          Create the first admin account using your <code>ADMIN_SETUP_KEY</code> from <code>.env</code>.
+          After setup you can log in normally.
+        </p>
+
+        <form id="setup-form" autocomplete="off">
+          <div class="admin-field">
+            <label for="setup-key">Setup key</label>
+            <input id="setup-key" type="password" autocomplete="new-password" placeholder="Value of ADMIN_SETUP_KEY in .env" required />
+          </div>
+          <div class="admin-field">
+            <label for="setup-name">Your name</label>
+            <input id="setup-name" type="text" placeholder="Full name" required />
+          </div>
+          <div class="admin-field">
+            <label for="setup-email">Email</label>
+            <input id="setup-email" type="email" placeholder="admin@example.com" required />
+          </div>
+          <div class="admin-field">
+            <label for="setup-password">Password</label>
+            <input id="setup-password" type="password" autocomplete="new-password" placeholder="At least 8 characters" required minlength="8" />
+          </div>
+
+          <button class="admin-btn-primary" type="submit">Create admin account</button>
+          <div class="admin-error-msg" id="setup-error"></div>
+        </form>
+
+        <p style="margin-top:1.25rem;font-size:.82rem;color:#9ca3af">
+          Already have an admin account?
+          <a href="index.html" style="color:var(--sea,#1c6f78)">Go to the main site</a> and log in there first,
+          then return here.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Dashboard view ─────────────────────────────────────────────────── -->
+  <div id="view-dashboard" style="display:none">
+    <div class="admin-layout">
+
+      <!-- Sidebar navigation -->
+      <nav class="admin-sidebar" aria-label="Admin sections">
+        <button class="admin-nav-item active" data-nav="overview">
+          Overview
+        </button>
+        <button class="admin-nav-item" data-nav="events">
+          Events
+        </button>
+        <button class="admin-nav-item" data-nav="comments">
+          Comments
+          <span class="admin-badge-count" style="display:none"></span>
+        </button>
+        <button class="admin-nav-item" data-nav="messages">
+          Messages
+          <span class="admin-badge-count" style="display:none"></span>
+        </button>
+        <button class="admin-nav-item" data-nav="users">
+          Users
+        </button>
+      </nav>
+
+      <!-- Panel content -->
+      <main class="admin-content" id="main">
+
+        <section class="admin-panel is-active" data-panel="overview">
+          <p class="admin-loading">Loading…</p>
+        </section>
+
+        <section class="admin-panel" data-panel="events">
+          <p class="admin-loading">Loading…</p>
+        </section>
+
+        <section class="admin-panel" data-panel="comments">
+          <p class="admin-loading">Loading…</p>
+        </section>
+
+        <section class="admin-panel" data-panel="messages">
+          <p class="admin-loading">Loading…</p>
+        </section>
+
+        <section class="admin-panel" data-panel="users">
+          <p class="admin-loading">Loading…</p>
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+  <script src="js/backend-client.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

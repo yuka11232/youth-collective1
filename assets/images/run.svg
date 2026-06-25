@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-label="Youth Run illustration">
+  <defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#1c6f78" stop-opacity="0.22"/><stop offset="1" stop-color="#f2b84b" stop-opacity="0.30"/></linearGradient></defs>
+  <rect width="900" height="520" rx="48" fill="#fffaf0"/>
+  <rect x="24" y="24" width="852" height="472" rx="42" fill="url(#bg)"/>
+  <circle cx="710" cy="120" r="62" fill="#f2b84b" opacity="0.82"/>
+  <path d="M96 385C215 245 344 215 493 300s235 63 319-47v156H96Z" fill="#1c6f78" opacity="0.28"/>
+  <path d="M128 350c130-98 241-102 374-18s236 67 313-4" fill="none" stroke="#18302f" stroke-opacity="0.5" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="248" cy="274" r="36" fill="#18302f" opacity="0.78"/>
+  <circle cx="372" cy="306" r="28" fill="#18302f" opacity="0.5"/>
+  <circle cx="532" cy="333" r="32" fill="#18302f" opacity="0.62"/>
+  <text x="84" y="116" fill="#18302f" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="800" letter-spacing="-2">Youth Run</text>
+  <text x="86" y="164" fill="#65706b" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700">Move together</text>
+</svg>

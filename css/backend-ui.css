@@ -1,0 +1,523 @@
+:root {
+  --yc-auth-bg: rgba(13, 34, 32, 0.56);
+  --yc-auth-card: rgba(255, 252, 244, 0.96);
+  --yc-auth-border: rgba(24, 48, 47, 0.12);
+  --yc-auth-shadow: 0 26px 80px rgba(24, 48, 47, 0.24);
+}
+
+.yc-auth-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-left: 0.35rem;
+}
+
+.yc-auth-open,
+.yc-user-chip,
+.yc-google-btn,
+.yc-comment-delete {
+  border: 1px solid rgba(24, 48, 47, 0.14);
+  background: rgba(255, 255, 255, 0.76);
+  color: var(--dark, #18302f);
+  border-radius: 999px;
+  padding: 0.68rem 0.95rem;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+
+.yc-auth-open:hover,
+.yc-user-chip:hover,
+.yc-google-btn:hover,
+.yc-comment-delete:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(24, 48, 47, 0.12);
+  background: #fff;
+}
+
+.yc-auth-open.subtle {
+  padding-inline: 0.8rem;
+  opacity: 0.78;
+}
+
+.yc-user-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem 0.5rem 0.5rem;
+}
+
+.yc-user-chip span,
+.yc-comment-avatar {
+  display: inline-grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3f7d58, #f2b84b);
+  color: #fffaf0;
+  font-weight: 900;
+  font-size: 0.78rem;
+}
+
+.yc-user-chip strong {
+  max-width: 8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.yc-auth-backdrop[hidden] {
+  display: none !important;
+}
+
+.yc-auth-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background: var(--yc-auth-bg);
+  backdrop-filter: blur(16px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 180ms ease;
+}
+
+.yc-auth-backdrop.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.yc-auth-modal {
+  position: relative;
+  width: min(940px, 100%);
+  max-height: min(92vh, 820px);
+  overflow: auto;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 1.2rem;
+  padding: clamp(1rem, 2.2vw, 1.65rem);
+  border: 1px solid var(--yc-auth-border);
+  border-radius: 2rem;
+  background: var(--yc-auth-card);
+  box-shadow: var(--yc-auth-shadow);
+  transform: translateY(18px) scale(0.98);
+  transition: transform 220ms ease;
+}
+
+.yc-auth-backdrop.show .yc-auth-modal {
+  transform: translateY(0) scale(1);
+}
+
+.yc-auth-close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  width: 2.35rem;
+  height: 2.35rem;
+  border: none;
+  border-radius: 50%;
+  background: rgba(24, 48, 47, 0.08);
+  color: #18302f;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.yc-auth-visual {
+  min-height: 360px;
+  border-radius: 1.5rem;
+  background:
+    radial-gradient(circle at 20% 18%, rgba(242, 184, 75, 0.55), transparent 32%),
+    radial-gradient(circle at 72% 38%, rgba(28, 111, 120, 0.35), transparent 34%),
+    linear-gradient(135deg, rgba(63, 125, 88, 0.92), rgba(24, 48, 47, 0.98));
+  overflow: hidden;
+  position: relative;
+}
+
+.yc-auth-visual span {
+  position: absolute;
+  border-radius: 999px;
+  background: rgba(255, 250, 240, 0.72);
+  animation: ycFloat 7s ease-in-out infinite;
+}
+
+.yc-auth-visual span:nth-child(1) { width: 150px; height: 150px; left: 12%; bottom: 15%; }
+.yc-auth-visual span:nth-child(2) { width: 86px; height: 86px; right: 18%; top: 18%; animation-delay: -2s; }
+.yc-auth-visual span:nth-child(3) { width: 52px; height: 52px; right: 28%; bottom: 22%; animation-delay: -4s; }
+
+@keyframes ycFloat {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(0, -18px, 0); }
+}
+
+.yc-auth-copy {
+  position: absolute;
+  left: clamp(2rem, 4vw, 3.2rem);
+  bottom: clamp(2rem, 4vw, 3.2rem);
+  width: min(350px, 44%);
+  color: #111318;
+  z-index: 2;
+  text-shadow: 0 1px 0 rgba(255, 250, 240, 0.28);
+}
+
+.yc-auth-copy h2 {
+  font-size: clamp(2rem, 4vw, 3.45rem);
+  letter-spacing: -0.06em;
+  line-height: 0.95;
+  margin: 0.45rem 0;
+}
+
+
+.yc-auth-copy .eyebrow,
+.yc-auth-copy h2,
+.yc-auth-copy p {
+  color: #111318;
+}
+
+.yc-auth-copy .eyebrow {
+  letter-spacing: 0.24em;
+  font-weight: 950;
+}
+
+.yc-auth-copy p {
+  max-width: 31rem;
+  opacity: 0.78;
+}
+
+.yc-auth-copy h2 {
+  text-shadow: 0 1px 0 rgba(255, 250, 240, 0.22);
+}
+
+.yc-auth-tabs,
+.yc-auth-panels {
+  grid-column: 2;
+}
+
+.yc-auth-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.45rem;
+  align-self: end;
+  margin-top: 3.2rem;
+  padding: 0.35rem;
+  border-radius: 999px;
+  background: rgba(24, 48, 47, 0.06);
+}
+
+.yc-auth-tabs button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.72rem;
+  background: transparent;
+  color: #65706b;
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.yc-auth-tabs button.active {
+  background: #fff;
+  color: #18302f;
+  box-shadow: 0 10px 24px rgba(24, 48, 47, 0.1);
+}
+
+.yc-auth-panel {
+  display: none;
+  animation: ycPanelIn 180ms ease both;
+}
+
+.yc-auth-panel.active {
+  display: grid;
+  gap: 0.85rem;
+}
+
+@keyframes ycPanelIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.yc-auth-panel label,
+.yc-comment-form label {
+  display: grid;
+  gap: 0.45rem;
+  font-weight: 850;
+  color: #18302f;
+}
+
+.yc-auth-panel input,
+.yc-comment-form textarea {
+  width: 100%;
+  border: 1px solid rgba(24, 48, 47, 0.14);
+  border-radius: 1rem;
+  padding: 0.92rem 1rem;
+  background: rgba(255, 255, 255, 0.84);
+  color: #18302f;
+  font: inherit;
+  outline: none;
+  transition: border 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.yc-auth-panel input:focus,
+.yc-comment-form textarea:focus {
+  border-color: rgba(63, 125, 88, 0.72);
+  box-shadow: 0 0 0 4px rgba(63, 125, 88, 0.14);
+}
+
+.yc-google-btn {
+  border-style: dashed;
+  width: 100%;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.52);
+}
+
+.yc-auth-status,
+.yc-comment-status,
+.yc-auth-hint {
+  min-height: 1.25rem;
+  margin: 0;
+  color: #65706b;
+  font-size: 0.92rem;
+}
+
+.yc-auth-status[data-status="success"] { color: #2d6a45; }
+.yc-auth-status[data-status="error"] { color: #a43d3d; }
+
+.yc-reset-box {
+  display: grid;
+  gap: 0.75rem;
+  padding: 0.9rem;
+  border-radius: 1rem;
+  background: rgba(242, 184, 75, 0.12);
+}
+
+.yc-comments-section {
+  margin-top: clamp(3rem, 8vw, 6rem);
+  border-radius: 2rem;
+  background: linear-gradient(135deg, rgba(255,255,255,0.78), rgba(255,250,240,0.92));
+  border: 1px solid rgba(24, 48, 47, 0.1);
+  box-shadow: 0 22px 70px rgba(24, 48, 47, 0.08);
+}
+
+.yc-comments-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.yc-comments-head h2 {
+  margin: 0.2rem 0 0.45rem;
+  font-size: clamp(1.8rem, 3.8vw, 3.3rem);
+  letter-spacing: -0.055em;
+}
+
+.yc-comment-form {
+  display: grid;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.yc-comment-form[hidden],
+[data-comment-login][hidden] {
+  display: none !important;
+}
+
+.yc-comment-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  color: rgba(255, 250, 240, 0.72);
+}
+
+.yc-comment-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.yc-comment-card,
+.yc-comment-empty {
+  padding: 1rem;
+  border: 1px solid rgba(24, 48, 47, 0.08);
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.78);
+  animation: ycPanelIn 200ms ease both;
+}
+
+.yc-comment-top {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.65rem;
+}
+
+.yc-comment-top div {
+  display: grid;
+  gap: 0.08rem;
+  margin-right: auto;
+}
+
+.yc-comment-top small,
+.yc-comment-empty {
+  color: rgba(255, 250, 240, 0.72);
+}
+
+.yc-comment-card p {
+  margin: 0;
+  color: #304240;
+  line-height: 1.7;
+}
+
+.yc-comment-delete {
+  padding: 0.45rem 0.7rem;
+  font-size: 0.82rem;
+}
+
+.yc-toast-holder {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: grid;
+  gap: 0.6rem;
+  z-index: 1200;
+  pointer-events: none;
+}
+
+.yc-toast {
+  max-width: min(360px, calc(100vw - 2rem));
+  padding: 0.9rem 1rem;
+  border-radius: 1rem;
+  background: rgba(24, 48, 47, 0.94);
+  color: #fffaf0;
+  box-shadow: 0 16px 45px rgba(24, 48, 47, 0.22);
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.yc-toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.yc-toast.error { background: rgba(143, 48, 48, 0.96); }
+.yc-toast.success { background: rgba(38, 106, 72, 0.96); }
+
+@media (max-width: 820px) {
+  .yc-auth-nav {
+    margin: 0.45rem 0 0;
+    width: 100%;
+  }
+
+  .yc-auth-open,
+  .yc-user-chip {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .yc-auth-modal {
+    grid-template-columns: 1fr;
+  }
+
+  .yc-auth-visual {
+    min-height: 180px;
+  }
+
+  .yc-auth-copy {
+    position: static;
+    width: auto;
+    grid-row: 1;
+    color: #fffaf0;
+    padding: 0.4rem 3rem 0 0;
+  }
+
+  .yc-auth-visual {
+    display: none;
+  }
+
+  .yc-auth-tabs,
+  .yc-auth-panels {
+    grid-column: 1;
+  }
+
+  .yc-auth-tabs {
+    margin-top: 0.25rem;
+  }
+
+  .yc-comments-head,
+  .yc-comment-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
+
+.yc-password-meter {
+  width: 100%;
+  height: 0.55rem;
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(24, 48, 47, 0.08);
+}
+
+.yc-password-meter span {
+  display: block;
+  width: 10%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #a43d3d, #f2b84b, #3f7d58);
+  transition: width 180ms ease;
+}
+
+.yc-password-rules {
+  display: grid;
+  gap: 0.3rem;
+  margin: -0.2rem 0 0;
+  padding-left: 1.2rem;
+  color: rgba(255, 250, 240, 0.72);
+  font-size: 0.88rem;
+}
+
+.yc-password-rules li[data-ok="true"] {
+  color: #2d6a45;
+}
+
+.yc-password-rules li[data-ok="false"] {
+  color: #8f6d5d;
+}
+
+.yc-auth-hint[data-status="success"] { color: #2d6a45; }
+.yc-auth-hint[data-status="error"] { color: #a43d3d; }
+
+.yc-auth-panel button:disabled,
+.yc-auth-panel input:disabled,
+.yc-auth-open:disabled,
+.yc-google-btn:disabled,
+.yc-comment-delete:disabled {
+  cursor: not-allowed;
+  opacity: 0.62;
+  transform: none;
+}
+
+.yc-reset-box[hidden] {
+  display: none !important;
+}
+
+
+.yc-auth-panel input::placeholder,
+.yc-comment-form textarea::placeholder {
+  color: rgba(24, 48, 47, 0.44);
+}
+
+.yc-auth-panel input:-webkit-autofill,
+.yc-auth-panel input:-webkit-autofill:hover,
+.yc-auth-panel input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #18302f;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0.92) inset;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+
