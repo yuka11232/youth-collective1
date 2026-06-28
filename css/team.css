@@ -1,11 +1,13 @@
 .team-hero { padding-bottom: 2rem; }
 .members-section { padding: 3rem 0 5rem; }
 .featured-member-card { display: grid; grid-template-columns: minmax(210px,.45fr) 1fr; gap: clamp(1rem,3vw,2.2rem); align-items: center; max-width: 980px; padding: clamp(.75rem,2vw,1.15rem); border: 1px solid var(--line); border-radius: var(--radius-lg); background: rgba(255,250,240,.76); box-shadow: 0 18px 50px rgba(24,48,47,.08); transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease; }
+.featured-member-card + .featured-member-card { margin-top: 1.5rem; }
 .featured-member-card:hover { transform: translateY(-4px); border-color: rgba(63,125,88,.34); box-shadow: 0 24px 70px rgba(24,48,47,.13); }
 .member-photo-frame, .profile-photo-panel { position: relative; overflow: hidden; border-radius: 24px; background: rgba(63,125,88,.1); }
 .member-photo-frame { aspect-ratio: 3 / 4; max-width: 270px; }
 .member-photo-frame img, .profile-photo-panel img { width: 100%; height: 100%; display: block; object-fit: cover; transition: transform .5s ease; }
 .member-photo-frame img { object-position: center 28%; }
+.member-photo-frame img.member-photo-vahid { object-position: center 22%; }
 .featured-member-card:hover .member-photo-frame img { transform: scale(1.035); }
 .featured-member-copy { max-width: 720px; }
 .member-name { margin: 0 0 .45rem; font-size: clamp(1.7rem,3vw,2.5rem); line-height: 1.05; }
