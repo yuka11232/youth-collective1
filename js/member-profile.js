@@ -35,6 +35,30 @@ const memberProfiles = {
       "Growing up as a Lezgin in Azerbaijan taught me to bridge different worlds, an adaptability that directly fuels my work in software architecture. I use this analytical flexibility to design artificial intelligence not merely for screens, but as a practical instrument for making physical environments more accessible and genuinely assisting people.",
       "I channel this approach into Youth Collective by analyzing social dynamics and helping shape inclusive, real-world spaces that promote physical activity, unite communities, and support individual needs. I believe true impact emerges where a programmer's logic meets genuine empathy."
     ]
+  },
+  "jeyla-ahmadzada": {
+    name: "Jeyla Ahmadzada",
+    title: "Youth Bioengineering and Accessible Medicine Ambassador",
+    lead: "Connecting science, technology, and compassionate care.",
+    image: "assets/images/Team%20members/Image4.jpeg",
+    imageAlt: "Portrait of Jeyla Ahmadzada",
+    description: [
+      "As a Youth Bioengineering and Accessible Medicine Ambassador, I explore how medicine, engineering, and careful observation can work together to make healthcare more accessible and human-centered. I am especially interested in diagnostic tools and medical technologies that can make healthcare more affordable, portable, and accessible to communities with limited access to specialized services.",
+      "My interest in the human body has been strongly shaped by seven years of classical piano. Playing an instrument taught me to notice posture, coordination, muscle tension, fatigue, and small changes in movement. I learned that discomfort and physical strain often begin with subtle signs that can easily be ignored, which encouraged me to think more deeply about prevention, early observation, and the importance of listening to what the body communicates.",
+      "I believe that medicine should not depend only on advanced hospitals or expensive equipment. Useful health information should be available to more people and presented in a way they can understand. At the same time, medical technology must remain accurate, transparent, and honest about its limitations. Through Youth Collective, I aim to encourage young people to explore medicine, biology, and engineering with curiosity and responsibility, treating compassion as an essential part of scientific progress."
+    ]
+  },
+  "ilyas-taghiyev": {
+    name: "Ilyas Taghiyev",
+    title: "Youth Data Science Educator and Mentorship Ambassador",
+    lead: "Helping younger students discover data science through curiosity, confidence, and practical learning.",
+    image: "assets/images/Team%20members/Image5.jpeg",
+    imageAlt: "Portrait of Ilyas Taghiyev",
+    description: [
+      "As a Youth Data Science Educator and Mentorship Ambassador, I focus on helping younger students understand data science, technology, and analytical thinking in a way that feels accessible, engaging, and relevant to everyday life.",
+      "I believe education should encourage curiosity, build confidence, and help young people recognize their own ability to solve problems. A strong mentor does not simply provide answers, but guides students as they ask questions, test ideas, learn from mistakes, and develop independent ways of thinking.",
+      "Through Youth Collective, I aim to introduce children and younger students to data science through interactive workshops, relatable examples, educational activities, and beginner-friendly projects. My goal is to create a supportive environment where students feel comfortable exploring unfamiliar ideas and seeing technology as something they can understand, use, and eventually build themselves."
+    ]
   }
 };
 
