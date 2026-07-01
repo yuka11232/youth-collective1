@@ -59,6 +59,30 @@ const memberProfiles = {
       "I believe education should encourage curiosity, build confidence, and help young people recognize their own ability to solve problems. A strong mentor does not simply provide answers, but guides students as they ask questions, test ideas, learn from mistakes, and develop independent ways of thinking.",
       "Through Youth Collective, I aim to introduce children and younger students to data science through interactive workshops, relatable examples, educational activities, and beginner-friendly projects. My goal is to create a supportive environment where students feel comfortable exploring unfamiliar ideas and seeing technology as something they can understand, use, and eventually build themselves."
     ]
+  },
+  "zahra-nasibli": {
+    name: "Zahra Nasibli",
+    title: "Youth Comparative Civic Systems and Community Innovation Ambassador",
+    lead: "Exploring how civic learning and international perspectives can strengthen local communities.",
+    image: "assets/images/Team%20members/Image6.jpeg",
+    imageAlt: "Portrait of Zahra Nasibli",
+    description: [
+      "I explore how cultural learning, civic participation, and international experience can contribute to the development of stronger urban communities in Azerbaijan. After experiencing exclusion because of my appearance, I became interested in cultures beyond my own and began studying how different societies organize public life and respond to community challenges.",
+      "I have studied Chinese since 2023 and developed a strong interest in East Asian culture, especially Chinese and Japanese literature, origami, and aikido. These interests encouraged me to look beyond tourism and understand how citizens, institutions, and communities work together to improve everyday life.",
+      "Through Youth Collective, I encourage young people to observe how their cities function and identify problems in streets, parks, transport areas, public infrastructure, accessibility, and neglected urban spaces. My goal is to bring useful international perspectives into local youth initiatives and help young people contribute to safer, more responsive, and community-centered cities in Azerbaijan."
+    ]
+  },
+  "mammad-nasibli": {
+    name: "Mammad Nasibli",
+    title: "Corporate Engagement and Communication Liaison",
+    lead: "Connecting young people, organizations, and opportunities through communication, trust, and collaboration beyond borders.",
+    image: "assets/images/Team%20members/Image7.jpeg",
+    imageAlt: "Portrait of Mammad Nasibli",
+    description: [
+      "As a Corporate Engagement and Communication Liaison, I focus on building meaningful connections between young people, organizations, and professional communities. I believe communication is not only about speaking clearly, but also about understanding people, building trust, and helping different sides work toward a shared goal.",
+      "From an early age, I became interested in diplomacy, leadership, business, and strategic thinking. Growing up around international business and studying influential ideas on negotiation and communication shaped my belief that strong relationships are the foundation of progress. At the same time, my interest in mathematics and logic taught me to approach challenges with structure, clarity, and critical thinking.",
+      "Today, I bridge the gap between corporate strategy and impactful dialogue. My mission is to equip young people with the precise communication skills and confidence they need to unlock global business opportunities. By leveraging leadership, mentorship, and professional liaison initiatives, I build high-trust bridges between students and organizations—ensuring that effective communication directly drives corporate collaboration, cultural understanding, and mutual economic growth."
+    ]
   }
 };
 
