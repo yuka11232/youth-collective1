@@ -1,5 +1,6 @@
 const archiveItems = document.querySelectorAll('[data-archive-item]');
 const archiveYearButtons = document.querySelectorAll('[data-archive-year-filter]');
+const archiveTriggers = document.querySelectorAll('.timeline-card-trigger');
 let activeArchiveYear = 'all';
 
 function updateArchiveFilter() {
@@ -19,6 +20,20 @@ archiveYearButtons.forEach((button) => {
     archiveYearButtons.forEach((btn) => btn.classList.remove('active'));
     button.classList.add('active');
     updateArchiveFilter();
+  });
+});
+
+archiveTriggers.forEach((trigger) => {
+  trigger.addEventListener('click', () => {
+    const card = trigger.closest('.timeline-card');
+    if (!card) return;
+    const expanded = card.classList.toggle('is-expanded');
+    trigger.setAttribute('aria-expanded', String(expanded));
+    if (expanded) {
+      const panel = card.querySelector('.timeline-detail-panel');
+      if (panel) panel.setAttribute('aria-hidden', 'false');
+      card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
   });
 });
 

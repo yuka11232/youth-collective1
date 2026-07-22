@@ -25,10 +25,10 @@
 .year-badge.future { background: rgba(28,111,120,.12); color: var(--sea); }
 .event-card h2 { font-size: clamp(1.55rem,3vw,2.25rem); }
 .event-card p, .event-card dd { color: var(--muted); }
-.event-card dl { display: grid; gap: .7rem; margin: 1.1rem 0; }
-.event-card dl div { padding-top: .7rem; border-top: 1px solid rgba(24,48,47,.08); }
-.event-card dt { color: var(--green-dark); font-weight: 900; font-size: .75rem; text-transform: uppercase; letter-spacing: .12em; }
-.event-card dd { margin: .15rem 0 0; }
+.program-intro { margin: .2rem 0 .9rem; color: var(--muted); font-weight: 700; }
+.program-points { margin: 0; padding: 0; list-style: none; display: grid; gap: .7rem; }
+.program-points li { padding: .8rem .9rem; border: 1px solid rgba(24,48,47,.08); border-radius: 16px; background: rgba(255,255,255,.64); }
+.program-points strong { display: block; margin-bottom: .2rem; color: var(--green-dark); font-size: .72rem; text-transform: uppercase; letter-spacing: .12em; }
 .map-section { margin-bottom: 5rem; padding: clamp(1.4rem,4vw,2.4rem); border-radius: var(--radius-lg); background: linear-gradient(135deg, rgba(255,250,240,.95), rgba(223,244,245,.65)); display: grid; grid-template-columns: .8fr 1.2fr; gap: 1.5rem; align-items: center; box-shadow: var(--shadow); }
 .map-section p { color: var(--muted); }
 .map-card { position: relative; min-height: 330px; border-radius: 28px; overflow: hidden; border: 1px solid var(--line); background: radial-gradient(circle at 20% 40%, rgba(242,184,75,.25), transparent 12rem), linear-gradient(135deg, rgba(63,125,88,.18), rgba(28,111,120,.18)); }
@@ -37,6 +37,7 @@
 .pin-1 { left: 22%; top: 26%; } .pin-2 { right: 24%; top: 42%; } .pin-3 { left: 44%; bottom: 24%; }
 @media (max-width: 900px) { .filter-panel, .map-section { grid-template-columns: 1fr; flex-direction: column; align-items: flex-start; } .filter-groups, .filters { justify-items: start; justify-content: flex-start; } .events-grid { grid-template-columns: 1fr; } }
 @media (max-width: 620px) { .compact-actions .button { width: 100%; } .event-card img { height: 210px; } }
+@media (prefers-reduced-motion: reduce) { .event-card, .filter-btn, .year-badge, .text-link { transition: none !important; } }
 .tag-energy { background: rgba(242,184,75,.16); color: #7a5500; }
 .tag-forums { background: rgba(28,111,120,.13); color: var(--sea); }
 .tag-business { background: rgba(63,125,88,.13); color: var(--green-dark); }

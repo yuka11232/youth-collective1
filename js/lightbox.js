@@ -2,6 +2,7 @@
   const EW = 'assets/images/gallery/Energy%20Week/';
   const MX = 'assets/images/gallery/Marsol%20Expo/';
   const WF = 'assets/images/gallery/WUF13/';
+  const JL = 'assets/images/gallery/John%20Locke/';
 
   const galleries = {
     'energy-week': {
@@ -69,6 +70,49 @@
         WF + 'IMG_20260521_151848.jpg',
         WF + 'IMG_20260521_202117_078.jpg',
         WF + 'IMG_20260521_202117_179.jpg',
+      ],
+    },
+    'john-locke': {
+      title: 'Baku Youth Ideas Lab',
+      photos: [
+        JL + 'johnlocke-01.jpeg',
+        JL + 'johnlocke-02.jpeg',
+        JL + 'johnlocke-03.jpeg',
+        JL + 'johnlocke-04.jpeg',
+        JL + 'johnlocke-05.jpeg',
+        JL + 'johnlocke-06.jpeg',
+        JL + 'johnlocke-07.jpeg',
+        JL + 'johnlocke-08.jpeg',
+        JL + 'johnlocke-09.jpeg',
+        JL + 'johnlocke-10.jpeg',
+        JL + 'johnlocke-11.jpeg',
+        JL + 'johnlocke-12.jpeg',
+        JL + 'johnlocke-13.jpeg',
+        JL + 'johnlocke-14.jpeg',
+        JL + 'johnlocke-15.jpeg',
+        JL + 'johnlocke-16.jpeg',
+        JL + 'johnlocke-17.jpeg',
+        JL + 'johnlocke-18.jpeg',
+        JL + 'johnlocke-19.jpeg',
+        JL + 'johnlocke-20.jpeg',
+        JL + 'johnlocke-21.jpeg',
+        JL + 'johnlocke-22.jpeg',
+        JL + 'johnlocke-23.jpeg',
+        JL + 'johnlocke-24.jpeg',
+        JL + 'johnlocke-25.jpeg',
+        JL + 'johnlocke-26.jpeg',
+        JL + 'johnlocke-27.jpeg',
+        JL + 'johnlocke-28.jpeg',
+        JL + 'johnlocke-29.jpeg',
+        JL + 'johnlocke-30.jpeg',
+        JL + 'johnlocke-31.jpeg',
+        JL + 'johnlocke-32.jpeg',
+        JL + 'johnlocke-33.jpeg',
+        JL + 'johnlocke-34.jpeg',
+        JL + 'johnlocke-35.jpeg',
+        JL + 'johnlocke-36.jpeg',
+        JL + 'johnlocke-37.jpeg',
+        JL + 'johnlocke-38.jpeg',
       ],
     },
   };

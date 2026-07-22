@@ -29,40 +29,56 @@
 
   const CONFIRMED_EVENTS = [
     {
-      title: 'Local Companies Exhibition - Marsol Expo',
+      title: 'Marsol Expo · Local Enterprise Briefing',
       year: 2026,
       category: 'business',
       scope: 'National',
-      imageUrl: 'assets/images/gallery/Marsol%20Expo/20260617_101824.jpg',
+      imageUrl: 'assets/images/gallery/Marsol%20Expo/IMG_20260617_133626_817.jpg',
       galleryKey: 'marsol-expo',
-      description: 'Youth Collective attended the Local Companies Exhibition at Marsol Expo to learn from Azerbaijani businesses, local production, entrepreneurship, and community-focused economic activity.',
-      focus: 'local companies, entrepreneurship, business networking, youth learning',
-      type: 'exhibition / learning visit',
-      status: 'Documented in June 2026'
+      description: 'Youth Collective treated the exhibition as a micro-program in local enterprise learning, pairing close observation with a compact “production-and-community map” that traced how businesses present value, labor, and civic relevance.',
+      goal: 'Understand how local companies describe their work, value chains, and community importance.',
+      actions: 'Members attended the exhibition, asked questions about production choices and local impact, and conducted short interviews. They then ran a “pitch-versus-proof” audit on two exhibitor stands — cross-checking founders’ spoken narratives against their own production numbers and pricing claims, in the cross-examination style of a business-school case discussion — before drafting a concise note on recurring themes and a brief presentation framework linking business storytelling to community needs.',
+      outcome: 'The team produced a one-page briefing with follow-up questions and a small set of presentation notes.',
+      achievement: 'Completed a documented briefing and interview summary on local enterprise themes.'
     },
     {
-      title: 'Azerbaijan Energy Week',
+      title: 'Azerbaijan Energy Week · Sustainability Briefing',
       year: 2026,
       category: 'energy',
       scope: 'International',
       imageUrl: 'assets/images/gallery/Energy%20Week/motion_photo_4258545104581702818.jpg',
       galleryKey: 'energy-week',
-      description: 'Youth Collective attended Azerbaijan Energy Week to explore energy, sustainability, infrastructure, and innovation through a youth perspective.',
-      focus: 'energy, sustainability, infrastructure, innovation',
-      type: 'international event / learning visit',
-      status: 'Documented in June 2026'
+      description: 'The program framed energy week as a practical study in how sustainability questions are presented to a public audience, with particular attention to infrastructure, resilience, and the ethical language of transition.',
+      goal: 'Explore how energy systems and sustainability ideas are introduced through exhibitions and public-facing discussion.',
+      actions: 'Members attended exhibits, gathered questions on reliability and local relevance, and interviewed presenters about practical challenges. They staged a short shadow rebuttal panel, modeled on Model UN cross-examination, testing whether Global North transition frameworks — carbon pricing, subsidy phase-outs — travel to a hydrocarbon-reliant economy, then drafted a short synthesis and a compact “transition lens” note on public trust and long-term planning.',
+      outcome: 'The team produced a brief research note and a discussion outline for later review.',
+      achievement: 'Completed an internal briefing and a question set on energy and sustainability.'
     },
     {
-      title: 'WUF13 - World Urban Forum',
+      title: 'WUF13 · Urban Futures Briefing',
       year: 2026,
       category: 'forums',
       scope: 'International',
       imageUrl: 'assets/images/gallery/WUF13/20260521_111932.jpg',
       galleryKey: 'wuf13',
-      description: 'Youth Collective attended WUF13, the World Urban Forum, engaging with conversations about urban development, public space, sustainability, and the role of young people in shaping cities.',
-      focus: 'urban development, youth participation, public space, sustainability',
-      type: 'international forum / participation',
-      status: 'Documented in May 2026'
+      description: 'Youth Collective treated the forum as a structured exercise in translating urban policy conversation into clear and accessible youth-facing analysis, with a particular focus on how technology and urbanism shape everyday life for minorities and expatriate communities.',
+      goal: 'Translate urban forum discussions into approachable analysis of public space, governance, and youth participation.',
+      actions: 'Members attended sessions, documented public-space and civic-engagement themes, prepared briefing notes after each session, and gathered questions for future debate. They also delivered original presentations and speeches on how smart-city technology and urban design choices shape digital exclusion for expatriate and minority residents, framed around the urbanist idea of the “right to the city.”',
+      outcome: 'The team produced a compact record of themes, questions, and discussion prompts for later reflection.',
+      achievement: 'Delivered a small program report and question bank grounded in observed sessions.'
+    },
+    {
+      title: 'Baku Youth Ideas Lab',
+      year: 2026,
+      category: 'community',
+      scope: 'Local',
+      imageUrl: 'assets/images/gallery/John%20Locke/johnlocke-26.jpeg',
+      galleryKey: 'john-locke',
+      description: 'Using John Locke Essay Competition questions, this micro-program made philosophy, science, and public policy accessible through imagination, debate, and high-level critical thinking, turning formal ideas into an original workshop of argument and intellectual discipline.',
+      goal: 'Make philosophy, science, and public policy more accessible through imaginative debate and disciplined reasoning.',
+      actions: 'Members designed prompts from the competition questions, guided students through structured argument-building, and set the philosopher’s own theory of natural rights and the social contract against present-day debates on algorithmic governance — asking whether consent-based political theory can meaningfully apply to systems nobody explicitly agreed to. They encouraged counterarguments and used AI ethically to test logic, generate counterarguments, and identify research gaps without copying or producing final work, comparing scientific claims with policy claims throughout.',
+      outcome: 'Students produced original argument outlines, question lists, and reflection notes showing stronger reasoning and clearer critical thinking.',
+      achievement: 'Completed a verified micro-program with student argument outlines and ethics-guided AI reflection notes.'
     }
   ];
 
@@ -87,13 +103,6 @@
     const scope = event.scope || 'Confirmed';
     const scopeClass = scope.toLowerCase() === 'international' ? 'scope-badge international' : 'scope-badge national';
 
-    const dlRows = [
-      '<div><dt>Scope</dt><dd>' + esc(scope) + '</dd></div>',
-      event.focus ? '<div><dt>Focus</dt><dd>' + esc(event.focus) + '</dd></div>' : '',
-      event.type ? '<div><dt>Type</dt><dd>' + esc(event.type) + '</dd></div>' : '',
-      event.status ? '<div><dt>Status</dt><dd>' + esc(event.status) + '</dd></div>' : ''
-    ].filter(Boolean).join('');
-
     article.innerHTML =
       '<img src="' + esc(imgSrc) + '" alt="' + esc(event.title) + '" onerror="this.onerror=null;this.src=\'assets/images/' + fallback + '\'">' +
       '<div class="event-card-content">' +
@@ -102,8 +111,13 @@
           '<span class="year-badge">' + esc(String(event.year)) + '</span>' +
         '</div>' +
         '<h2>' + esc(event.title) + '</h2>' +
-        '<p>' + esc(event.description) + '</p>' +
-        '<dl>' + dlRows + '</dl>' +
+        '<p class="program-intro">' + esc(event.description) + '</p>' +
+        '<ul class="program-points">' +
+          (event.goal ? '<li><strong>Goal</strong>' + esc(event.goal) + '</li>' : '') +
+          (event.actions ? '<li><strong>Actions</strong>' + esc(event.actions) + '</li>' : '') +
+          (event.outcome ? '<li><strong>Outcome</strong>' + esc(event.outcome) + '</li>' : '') +
+          (event.achievement ? '<li><strong>Verified achievement</strong>' + esc(event.achievement) + '</li>' : '') +
+        '</ul>' +
         (event.galleryKey ? '<span class="text-link" aria-hidden="true">View photos -></span>' : '') +
       '</div>';
 

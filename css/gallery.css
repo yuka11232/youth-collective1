@@ -24,9 +24,13 @@
 .photo-content b { padding: .3rem .6rem; border-radius: 999px; background: var(--ink); color: var(--white); font-size: .72rem; }
 .photo-content .scope-label.international { background: rgba(28,111,120,.13); color: var(--sea); }
 .photo-content .scope-label.national { background: rgba(63,125,88,.13); color: var(--green-dark); }
+.tag-community { background: rgba(28,111,120,.13); color: var(--sea); }
 .photo-content h3 { font-size: 1.2rem; }
 .photo-meta { margin: .4rem 0 .7rem; color: var(--muted); font-weight: 700; font-size: .93rem; }
 .photo-content p { margin: 0; color: var(--muted); }
+.program-bullets { margin: .85rem 0 0; padding: 0; list-style: none; display: grid; gap: .6rem; }
+.program-bullets li { padding: .7rem .75rem; border: 1px solid rgba(24,48,47,.08); border-radius: 14px; background: rgba(255,255,255,.56); }
+.program-bullets strong { display: block; margin-bottom: .18rem; color: var(--green-dark); font-size: .72rem; text-transform: uppercase; letter-spacing: .12em; }
 .upload-panel { margin-top: 5rem; padding: clamp(1.4rem, 4vw, 2.4rem); border: 1px solid var(--line); border-radius: var(--radius-lg); background: linear-gradient(135deg, rgba(255,250,240,.95), rgba(223,244,245,.7)); box-shadow: var(--shadow); }
 .upload-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 2rem; align-items: start; }
 .upload-box { border: 2px dashed rgba(32,81,59,.22); border-radius: 26px; background: rgba(255,255,255,.58); padding: 1.2rem; min-height: 220px; display: grid; place-items: center; text-align: center; }
@@ -45,6 +49,7 @@
 @media (max-width: 1080px) { .photo-grid { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 900px) { .photo-grid { grid-template-columns: repeat(2, 1fr); } .upload-grid { grid-template-columns: 1fr; } .gallery-toolbar { align-items: flex-start; flex-direction: column; } .gallery-filter-groups, .gallery-filters { justify-items: start; justify-content: flex-start; } }
 @media (max-width: 620px) { .gallery-stats, .photo-grid, .preview-grid { grid-template-columns: 1fr; } .gallery-actions { flex-direction: column; align-items: stretch; } }
+@media (prefers-reduced-motion: reduce) { .photo-card, .gallery-filter { transition: none !important; } }
 .tag-energy { background: rgba(242,184,75,.16); color: #7a5500; }
 .tag-forums { background: rgba(28,111,120,.13); color: var(--sea); }
 .tag-business { background: rgba(63,125,88,.13); color: var(--green-dark); }

@@ -12,12 +12,16 @@
 .timeline-section { scroll-margin-top: 110px; padding-bottom: clamp(4rem, 7vw, 6rem); }
 .timeline-list { position: relative; display: grid; gap: 1rem; }
 .timeline-list::before { content: ""; position: absolute; top: 1.2rem; bottom: 1.2rem; left: 96px; width: 2px; background: linear-gradient(var(--green-dark), rgba(28,111,120,.18)); }
-.timeline-card { position: relative; display: grid; grid-template-columns: 190px 1fr; gap: 1.2rem; align-items: stretch; }
+.timeline-card { position: relative; display: grid; grid-template-columns: 1fr; gap: .9rem; align-items: start; }
 .timeline-card.is-hidden, .archive-photo-card.is-hidden { display: none; }
+.timeline-card-trigger { width: 100%; border: 0; background: transparent; padding: 0; display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 1.2rem; align-items: start; text-align: left; cursor: pointer; }
+.timeline-card-trigger:focus-visible { outline: 3px solid rgba(28,111,120,.35); outline-offset: 4px; border-radius: 24px; }
 .timeline-date { position: relative; z-index: 1; align-self: start; padding: .9rem; border: 1px solid var(--line); border-radius: 24px; background: rgba(255,250,240,.95); box-shadow: 0 16px 40px rgba(24,48,47,.07); }
 .timeline-date span { display: grid; place-items: center; width: 54px; height: 54px; margin-bottom: .75rem; border-radius: 18px; background: var(--green-dark); color: var(--white); font-weight: 900; }
 .timeline-date strong { display: block; letter-spacing: -.03em; }
-.timeline-content { padding: clamp(1.2rem, 3vw, 1.6rem); border: 1px solid var(--line); border-radius: var(--radius-lg); background: rgba(255,250,240,.78); box-shadow: var(--shadow); }
+.timeline-content { min-width: 0; padding: clamp(1.2rem, 3vw, 1.6rem); border: 1px solid var(--line); border-radius: var(--radius-lg); background: rgba(255,250,240,.78); box-shadow: var(--shadow); }
+.timeline-meta { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
+.timeline-meta span { display: inline-flex; padding: .3rem .65rem; border-radius: 999px; background: rgba(63,125,88,.11); color: var(--green-dark); font-weight: 800; font-size: .74rem; }
 .archive-card-tags { display: flex; flex-wrap: wrap; gap: .45rem; margin-bottom: .7rem; }
 .tag { display: inline-flex; margin-bottom: .7rem; padding: .35rem .65rem; border-radius: 999px; background: rgba(63,125,88,.11); color: var(--green-dark); font-size: .74rem; font-weight: 900; text-transform: uppercase; letter-spacing: .12em; }
 .archive-card-tags .tag { margin-bottom: 0; }
@@ -26,7 +30,13 @@
 .scope-badge.national { background: rgba(63,125,88,.13); color: var(--green-dark); }
 .timeline-content h3 { font-size: clamp(1.55rem, 3vw, 2.25rem); }
 .timeline-content p, .timeline-content li { color: var(--muted); }
-.timeline-content ul { margin: 1rem 0 0; padding-left: 1.2rem; }
+.timeline-detail-panel { grid-column: 1 / -1; max-height: 0; overflow: hidden; opacity: 0; padding: 0; margin-top: 0; transition: max-height .3s ease, opacity .25s ease, transform .25s ease; transform: translateY(-6px); }
+.timeline-detail-panel .detail-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .9rem; padding: 1rem 0 0; }
+.timeline-detail-panel .detail-card { padding: 1rem 1.1rem; border: 1px solid rgba(24,48,47,.08); border-radius: 20px; background: rgba(255,255,255,.7); }
+.timeline-detail-panel h4 { margin-bottom: .45rem; color: var(--green-dark); font-size: .98rem; }
+.timeline-detail-panel ul { margin: .65rem 0 0; padding-left: 1.1rem; display: grid; gap: .35rem; }
+.timeline-card.is-expanded .timeline-detail-panel { max-height: 36rem; opacity: 1; transform: translateY(0); padding-top: .5rem; }
+.timeline-card.is-expanded .timeline-content { box-shadow: 0 22px 48px rgba(24,48,47,.11); }
 .archive-gallery-section { scroll-margin-top: 110px; padding-bottom: 5rem; }
 .archive-photo-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
 .archive-photo-card { overflow: hidden; border: 1px solid var(--line); border-radius: 28px; background: rgba(255,250,240,.78); box-shadow: 0 16px 44px rgba(24,48,47,.08); transition: transform .22s ease; }
@@ -42,8 +52,9 @@
 .proof-grid span { display: block; margin-bottom: .3rem; color: var(--green-dark); font-weight: 900; }
 .proof-grid p { margin: 0; }
 @media (max-width: 1020px) { .archive-photo-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 860px) { .archive-summary, .proof-section { grid-template-columns: 1fr; } .archive-filter-panel { align-items: flex-start; flex-direction: column; } .archive-filters { justify-content: flex-start; } .timeline-list::before { left: 28px; } .timeline-card { grid-template-columns: 1fr; padding-left: 58px; } .timeline-date { display: flex; align-items: center; gap: .85rem; } .timeline-date span { margin-bottom: 0; flex: 0 0 auto; } }
-@media (max-width: 620px) { .archive-actions .button { width: 100%; } .timeline-card { padding-left: 0; } .timeline-list::before { display: none; } .archive-photo-grid { grid-template-columns: 1fr; } }
+@media (max-width: 860px) { .archive-summary, .proof-section { grid-template-columns: 1fr; } .archive-filter-panel { align-items: flex-start; flex-direction: column; } .archive-filters { justify-content: flex-start; } .timeline-list::before { left: 28px; } .timeline-card { padding-left: 0; } .timeline-card-trigger { grid-template-columns: 1fr; } .timeline-date { display: flex; align-items: center; gap: .85rem; } .timeline-date span { margin-bottom: 0; flex: 0 0 auto; } .timeline-detail-panel .detail-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 620px) { .archive-actions .button { width: 100%; } .timeline-card { padding-left: 0; } .timeline-list::before { display: none; } .archive-photo-grid { grid-template-columns: 1fr; } .timeline-content { padding: 1rem; } .timeline-meta { flex-direction: column; align-items: flex-start; } .timeline-detail-panel .detail-grid { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .timeline-card-trigger, .timeline-detail-panel, .timeline-content, .archive-filter { transition: none !important; } }
 .archive-year-filters { margin-top: .4rem; }
 .tag-energy { background: rgba(242,184,75,.16); color: #7a5500; }
 .tag-forums { background: rgba(28,111,120,.13); color: var(--sea); }
