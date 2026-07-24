@@ -83,6 +83,18 @@ const memberProfiles = {
       "From an early age, I became interested in diplomacy, leadership, business, and strategic thinking. Growing up around international business and studying influential ideas on negotiation and communication shaped my belief that strong relationships are the foundation of progress. At the same time, my interest in mathematics and logic taught me to approach challenges with structure, clarity, and critical thinking.",
       "Today, I bridge the gap between corporate strategy and impactful dialogue. My mission is to equip young people with the precise communication skills and confidence they need to unlock global business opportunities. By leveraging leadership, mentorship, and professional liaison initiatives, I build high-trust bridges between students and organizations—ensuring that effective communication directly drives corporate collaboration, cultural understanding, and mutual economic growth."
     ]
+  },
+  "mikayil-ahmadbayli": {
+    name: "Mikayil Ahmadbayli",
+    title: "Youth Biomedical Engineering and Scientific Innovation Ambassador",
+    lead: "Building technologies that transform scientific discoveries into real-world impact.",
+    image: "assets/images/Team%20members/Image9-portrait.jpeg",
+    imageAlt: "Portrait of Mikayil Ahmadbayli",
+    description: [
+      "As a Youth Biomedical Engineering and Scientific Innovation Ambassador, I am passionate about the intersection of engineering, chemistry, and the life sciences. I believe that the most meaningful innovations emerge when scientific knowledge is translated into practical solutions that address real-world challenges and improve people's lives.",
+      "My experience in chemistry, biomedical engineering, and interdisciplinary research has shown me how innovation can bridge scientific discovery and real-world application. Whether developing novel materials, designing intelligent technologies, or exploring engineering solutions to complex challenges, I am driven by curiosity, creativity, and a commitment to creating meaningful impact through science and technology.",
+      "Through my role in Youth Collective, I hope to inspire young people to see science not as separate disciplines, but as interconnected fields working toward a shared purpose. My mission is to encourage the next generation of innovators to combine research, engineering, and collaboration to develop technologies that improve lives, advance scientific progress, and shape a better future."
+    ]
   }
 };
 
