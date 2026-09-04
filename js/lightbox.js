@@ -113,6 +113,10 @@
         JL + 'johnlocke-36.jpeg',
         JL + 'johnlocke-37.jpeg',
         JL + 'johnlocke-38.jpeg',
+        JL + 'johnlocke-39.jpeg',
+        JL + 'johnlocke-40.jpeg',
+        JL + 'johnlocke-41.jpeg',
+        JL + 'johnlocke-42.jpeg',
       ],
     },
   };

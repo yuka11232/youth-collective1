@@ -4,7 +4,7 @@ const memberProfiles = {
     name: "Youssef El Haroun",
     title: "Youth Anthropology and Human-Centered Technology Ambassador",
     lead: "Building technology that begins with culture, identity, and real human experience.",
-    image: "assets/images/Team%20members/Image1.jpeg",
+    image: "assets/images/Team%20members/Youssef%20El%20Haroun/Image1.jpeg",
     imageAlt: "Youth Collective member portrait",
     description: [
       "As a Youth Anthropology and Human-Centered Technology Ambassador, I focus on the relationship between people, culture, and innovation. I believe that technology becomes more meaningful when it begins with an understanding of how individuals live, communicate, preserve traditions, and experience the world around them.",
@@ -16,7 +16,7 @@ const memberProfiles = {
     name: "Vahid Musayev",
     title: "Mechanical & Electrical R&D Practitioner",
     lead: "Turning existing hardware, practical engineering, and resourcefulness into resilient solutions with community impact.",
-    image: "assets/images/Team%20members/Image2.jpeg",
+    image: "assets/images/Team%20members/Vahid%20Musayev/Image2.jpeg",
     imageAlt: "Portrait of Vahid Musayev",
     description: [
       "I specialize in adaptive engineering and electro-mechanical deconstruction, transforming legacy hardware into scalable agricultural and environmental solutions. My work combines a strong foundation in physics and heavy engines with practical expertise in electrical systems, allowing me to optimize technology under strict resource constraints.",
@@ -28,7 +28,7 @@ const memberProfiles = {
     name: "Ali Gasimov",
     title: "Systems Logic Architect & Environmental Innovator",
     lead: "Connecting a programmer's mindset with real human needs.",
-    image: "assets/images/Team%20members/Image3.jpeg",
+    image: "assets/images/Team%20members/Ali%20Gasimov/Image3.jpeg",
     imageAlt: "Portrait of Ali Gasimov",
     description: [
       "I view the world as a complex architecture waiting to be debugged. Driven by a developer's mindset, I apply strict algorithmic logic to untangle unpredictable human challenges, transforming messy problems into clear, structured solutions from the ground up.",
@@ -40,7 +40,7 @@ const memberProfiles = {
     name: "Jeyla Ahmadzada",
     title: "Youth Bioengineering and Accessible Medicine Ambassador",
     lead: "Connecting science, technology, and compassionate care.",
-    image: "assets/images/Team%20members/Image4.jpeg",
+    image: "assets/images/Team%20members/Jeyla%20Ahmadzada/Image4.jpeg",
     imageAlt: "Portrait of Jeyla Ahmadzada",
     description: [
       "As a Youth Bioengineering and Accessible Medicine Ambassador, I explore how medicine, engineering, and careful observation can work together to make healthcare more accessible and human-centered. I am especially interested in diagnostic tools and medical technologies that can make healthcare more affordable, portable, and accessible to communities with limited access to specialized services.",
@@ -52,7 +52,7 @@ const memberProfiles = {
     name: "Ilyas Taghiyev",
     title: "Youth Data Science Educator and Mentorship Ambassador",
     lead: "Helping younger students discover data science through curiosity, confidence, and practical learning.",
-    image: "assets/images/Team%20members/Image5.jpeg",
+    image: "assets/images/Team%20members/Ilyas%20Taghiyev/Image5.jpeg",
     imageAlt: "Portrait of Ilyas Taghiyev",
     description: [
       "As a Youth Data Science Educator and Mentorship Ambassador, I focus on helping younger students understand data science, technology, and analytical thinking in a way that feels accessible, engaging, and relevant to everyday life.",
@@ -64,7 +64,7 @@ const memberProfiles = {
     name: "Zahra Nasibli",
     title: "Youth Comparative Civic Systems and Community Innovation Ambassador",
     lead: "Exploring how civic learning and international perspectives can strengthen local communities.",
-    image: "assets/images/Team%20members/Image6.jpeg",
+    image: "assets/images/Team%20members/Zahra%20Nasibli/Image6.jpeg",
     imageAlt: "Portrait of Zahra Nasibli",
     description: [
       "I explore how cultural learning, civic participation, and international experience can contribute to the development of stronger urban communities in Azerbaijan. After experiencing exclusion because of my appearance, I became interested in cultures beyond my own and began studying how different societies organize public life and respond to community challenges.",
@@ -76,7 +76,7 @@ const memberProfiles = {
     name: "Mammad Nasibli",
     title: "Corporate Engagement and Communication Liaison",
     lead: "Connecting young people, organizations, and opportunities through communication, trust, and collaboration beyond borders.",
-    image: "assets/images/Team%20members/Image7.jpeg",
+    image: "assets/images/Team%20members/Mammad%20Nasibli/Image7.jpeg",
     imageAlt: "Portrait of Mammad Nasibli",
     description: [
       "As a Corporate Engagement and Communication Liaison, I focus on building meaningful connections between young people, organizations, and professional communities. I believe communication is not only about speaking clearly, but also about understanding people, building trust, and helping different sides work toward a shared goal.",
@@ -88,12 +88,36 @@ const memberProfiles = {
     name: "Mikayil Ahmadbayli",
     title: "Youth Biomedical Engineering and Scientific Innovation Ambassador",
     lead: "Building technologies that transform scientific discoveries into real-world impact.",
-    image: "assets/images/Team%20members/Image9-portrait.jpeg",
+    image: "assets/images/Team%20members/Mikayil%20Ahmadbayli/Image9-portrait.jpeg",
     imageAlt: "Portrait of Mikayil Ahmadbayli",
     description: [
       "As a Youth Biomedical Engineering and Scientific Innovation Ambassador, I am passionate about the intersection of engineering, chemistry, and the life sciences. I believe that the most meaningful innovations emerge when scientific knowledge is translated into practical solutions that address real-world challenges and improve people's lives.",
       "My experience in chemistry, biomedical engineering, and interdisciplinary research has shown me how innovation can bridge scientific discovery and real-world application. Whether developing novel materials, designing intelligent technologies, or exploring engineering solutions to complex challenges, I am driven by curiosity, creativity, and a commitment to creating meaningful impact through science and technology.",
       "Through my role in Youth Collective, I hope to inspire young people to see science not as separate disciplines, but as interconnected fields working toward a shared purpose. My mission is to encourage the next generation of innovators to combine research, engineering, and collaboration to develop technologies that improve lives, advance scientific progress, and shape a better future."
+    ]
+  },
+  "nijat-shikhaliyev": {
+    name: "Nijat Shikhaliyev",
+    title: "Head of Education, The Youth Collective Azerbaijan",
+    lead: "What's the smallest, most honest way to measure something people assume can't be measured?",
+    image: "assets/images/Team%20members/Nijat/Image10.jpeg",
+    imageAlt: "Portrait of Nijat Shikhaliyev",
+    description: [
+      "Final-year student at Baku European Lyceum. I lead education programming for The Youth Collective and build things at the intersection of mathematics and the parts of life nobody thinks to measure: from a satellite pipeline flagging tree disease before it's visible, to an index tracking 170 years of Louis Vuitton design, to piano pieces built from river data.",
+      "In summer 2026, I was admitted with full funding to the Stanford University Mathematics Camp. I'm also developing a stormwater study for Baku's sewer network with Lumiere Education, and I co-founded Fani, an online school for children with learning differences.",
+      "Most of what I build starts from the same question: what's the smallest, most honest way to measure something people assume can't be measured?"
+    ],
+    accomplishments: [
+      {
+        title: "Stanford University Mathematics Camp (SUMaC)",
+        date: "Summer 2026",
+        summary: "Nijat completed Stanford University Mathematics Camp (SUMaC) with full funding. The intensive experience brought him into a community centered on advanced mathematical thinking, proof, exploration, and collaborative problem-solving.",
+        images: [
+          "assets/images/Team%20members/Nijat/Stan1.jpeg",
+          "assets/images/Team%20members/Nijat/Stan2.jpeg",
+          "assets/images/Team%20members/Nijat/Stan3.jpeg"
+        ]
+      }
     ]
   }
 };
@@ -131,6 +155,50 @@ if (!profile) {
     p.textContent = paragraph;
     body.appendChild(p);
   });
+
+  const accomplishmentsSection = document.querySelector("[data-member-accomplishments]");
+  const accomplishmentsList = document.querySelector("[data-accomplishments-list]");
+  if (profile.accomplishments?.length) {
+    accomplishmentsSection.hidden = false;
+    profile.accomplishments.forEach((accomplishment) => {
+      const item = document.createElement("article");
+      item.className = "accomplishment-card";
+
+      const copy = document.createElement("div");
+      copy.className = "accomplishment-copy";
+
+      const date = document.createElement("p");
+      date.className = "accomplishment-date";
+      date.textContent = accomplishment.date;
+
+      const heading = document.createElement("h3");
+      heading.textContent = accomplishment.title;
+
+      const summary = document.createElement("p");
+      summary.textContent = accomplishment.summary;
+
+      copy.append(date, heading, summary);
+      item.appendChild(copy);
+
+      if (accomplishment.images?.length) {
+        const gallery = document.createElement("div");
+        gallery.className = "accomplishment-gallery";
+        gallery.setAttribute("aria-label", `${accomplishment.title} photos`);
+
+        accomplishment.images.forEach((source, index) => {
+          const image = document.createElement("img");
+          image.src = source;
+          image.alt = `${accomplishment.title}, photo ${index + 1}`;
+          image.loading = "lazy";
+          gallery.appendChild(image);
+        });
+
+        item.appendChild(gallery);
+      }
+
+      accomplishmentsList.appendChild(item);
+    });
+  }
 }
 
 copyButton?.addEventListener("click", async () => {
