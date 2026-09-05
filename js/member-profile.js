@@ -96,6 +96,18 @@ const memberProfiles = {
       "Through my role in Youth Collective, I hope to inspire young people to see science not as separate disciplines, but as interconnected fields working toward a shared purpose. My mission is to encourage the next generation of innovators to combine research, engineering, and collaboration to develop technologies that improve lives, advance scientific progress, and shape a better future."
     ]
   },
+  "huseyn-karimli": {
+    name: "Huseyn Karimli",
+    title: "Data Visualization and Financial Analytics Lead",
+    lead: "Translating the language of numbers and finance into clear, impactful design.",
+    image: "assets/images/Team%20members/Huseyn/Huseyn.jpeg",
+    imageAlt: "Portrait of Huseyn Karimli",
+    description: [
+      "As our Data Visualization and Financial Analytics Lead, I am passionate about turning complex datasets into clear visual stories. I believe that spreadsheets and reports should never be confusing—the most powerful insights emerge when financial logic is paired with intuitive, accessible design.",
+      "My experience in analytics, data management, and financial tracking has shown me how thoughtful presentation can clear the chaos out of raw statistics. Whether managing project budgets, structuring data flow, or designing clean diagrams, I am driven by precision, structure, and a commitment to making information understandable at a glance.",
+      "Through my role in Youth Collective, I aim to help our team connect calculations with action. My mission is to ensure that data empowers every member to see the bigger picture, make informed decisions, and grow our shared projects with confidence."
+    ]
+  },
   "nijat-shikhaliyev": {
     name: "Nijat Shikhaliyev",
     title: "Head of Education, The Youth Collective Azerbaijan",
