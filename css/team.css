@@ -53,3 +53,8 @@
 .profile-empty { max-width: 760px; padding: clamp(1.25rem,4vw,2rem); border: 1px solid var(--line); border-radius: var(--radius-lg); background: rgba(255,250,240,.76); }
 @media(max-width:900px){.featured-member-card,.profile-layout{grid-template-columns:1fr}.featured-member-card{align-items:start}.profile-photo-panel{max-width:520px}.profile-story h1{font-size:clamp(2rem,10vw,3.2rem)}}
 @media(max-width:620px){.featured-member-card{padding:.75rem}.member-photo-frame,.profile-photo-panel{border-radius:18px}.read-more-link{width:100%;justify-content:center}.members-section{padding-top:2rem}.accomplishment-gallery{grid-template-columns:1fr}.accomplishment-gallery img{aspect-ratio:16 / 10}}
+.accomplishment-documents { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 1rem; padding: 1rem; }
+.accomplishment-document { display: block; min-width: 0; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: #fff; }
+.accomplishment-document img { display: block; width: 100%; height: auto; }
+.accomplishment-document span { display: block; padding: .85rem; font-weight: 600; }
+.accomplishment-document:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }

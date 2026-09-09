@@ -1,4 +1,15 @@
 const memberProfiles = {
+  "jamal-naghizade": {
+    name: "Jamal Naghizade",
+    title: "Youth Feminism and Women’s Rights Ambassador",
+    lead: "Helping young people recognize gender inequality and speak up fearlessly.",
+    image: "assets/images/Team%20members/Jamal/Jamal.jpeg",
+    imageAlt: "Portrait of Jamal Naghizade",
+    description: [
+      "As a Feminism and Women's Rights Ambassador, I focus on dismantling gender stereotypes and preventing harmful prejudices from taking root among youth. My dedication to equality began in childhood, watching my older sister face unfair treatment in the \"male-dominated\" medical field. Recognizing this injustice early on inspired me to advocate for women's rights in Azerbaijan.",
+      "Today, I research how public reactions differ between men and women, analyze online conversations that excuse inequality, and use creative projects like photoshoots to highlight these issues. Through the Youth Collective, my goal is to help young people recognize gender inequality, speak up fearlessly, and understand that advocating for women is a necessary, local reality."
+    ]
+  },
   // Add the next member with a new URL key, then link to member.html?id=that-key.
   "human-centered-technology": {
     name: "Youssef El Haroun",
@@ -128,6 +139,18 @@ const memberProfiles = {
           "assets/images/Team%20members/Nijat/Stan1.jpeg",
           "assets/images/Team%20members/Nijat/Stan2.jpeg",
           "assets/images/Team%20members/Nijat/Stan3.jpeg"
+        ],
+        documents: [
+          {
+            title: "SUMaC admission letter",
+            image: "assets/images/Team%20members/Nijat/sumac-admission-1.png",
+            href: "assets/images/Team%20members/Nijat/SUMaC%20admission.pdf"
+          },
+          {
+            title: "SUMaC full financial aid award",
+            image: "assets/images/Team%20members/Nijat/sumac-financial-aid-1.png",
+            href: "assets/images/Team%20members/Nijat/SUMaC%20financial%20aid.pdf"
+          }
         ]
       }
     ]
@@ -206,6 +229,27 @@ if (!profile) {
         });
 
         item.appendChild(gallery);
+      }
+
+      if (accomplishment.documents?.length) {
+        const documents = document.createElement("div");
+        documents.className = "accomplishment-documents";
+        accomplishment.documents.forEach((documentInfo) => {
+          const link = document.createElement("a");
+          link.className = "accomplishment-document";
+          link.href = documentInfo.href;
+          link.target = "_blank";
+          link.rel = "noopener";
+          const preview = document.createElement("img");
+          preview.src = documentInfo.image;
+          preview.alt = documentInfo.title;
+          preview.loading = "lazy";
+          const caption = document.createElement("span");
+          caption.textContent = `${documentInfo.title} - Open PDF`;
+          link.append(preview, caption);
+          documents.appendChild(link);
+        });
+        item.appendChild(documents);
       }
 
       accomplishmentsList.appendChild(item);
