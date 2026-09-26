@@ -523,3 +523,83 @@
     gap: 0.7rem;
   }
 }
+
+/* ===========================================================
+   UNFPA / COP29
+   =========================================================== */
+.unfpa-section {
+  margin-top: 4.5rem;
+  padding-top: 3.5rem;
+  border-top: 1px solid var(--line);
+}
+.unfpa-layout {
+  grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr);
+}
+
+/* PDF original link inside the letter caption */
+.doc-link {
+  color: var(--sea);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Project Lead credit */
+.lead-credit {
+  margin-top: 3rem;
+  padding: 2.2rem 2rem;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, var(--green-dark), var(--sea));
+  color: var(--white);
+  box-shadow: 0 24px 65px rgba(32, 81, 59, 0.22);
+}
+.lead-credit .eyebrow {
+  color: rgba(255, 255, 255, 0.72);
+}
+.lead-credit h3 {
+  margin: 0 0 0.8rem;
+  color: var(--white);
+  font-size: clamp(1.35rem, 3vw, 1.9rem);
+  letter-spacing: -0.035em;
+}
+.lead-credit-intro,
+.lead-credit-note {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 76ch;
+}
+.lead-credit-list {
+  list-style: none;
+  margin: 1.4rem 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.8rem;
+}
+.lead-credit-list li {
+  padding: 1rem 1.2rem;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  font-size: 0.96rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.lead-credit-note {
+  padding-top: 1.3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 900px) {
+  .unfpa-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (max-width: 620px) {
+  .lead-credit {
+    padding: 1.8rem 1.4rem;
+  }
+}
