@@ -483,6 +483,40 @@
   color: var(--muted);
   font-size: 0.97rem;
 }
+.venue-letter-pages {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+  margin-top: 1.25rem;
+}
+.venue-letter-page {
+  min-width: 0;
+  margin: 0;
+}
+.venue-letter-page a {
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--white);
+}
+.venue-letter-page a:focus-visible {
+  outline: 3px solid var(--green);
+  outline-offset: 3px;
+}
+.venue-letter-page img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: contain;
+}
+.venue-letter-page figcaption {
+  margin: 0;
+  padding: 0.55rem 0.1rem 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
 
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {

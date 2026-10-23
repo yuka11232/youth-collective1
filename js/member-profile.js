@@ -10,6 +10,32 @@ const memberProfiles = {
       "Today, I research how public reactions differ between men and women, analyze online conversations that excuse inequality, and use creative projects like photoshoots to highlight these issues. Through the Youth Collective, my goal is to help young people recognize gender inequality, speak up fearlessly, and understand that advocating for women is a necessary, local reality."
     ]
   },
+  "narmin-alizada": {
+    name: "Narmin Alizada",
+    title: "Business Research & Strategy Lead",
+    lead: "Understanding how business decisions shape markets, communities, and opportunities.",
+    image: "assets/images/Team%20members/Narmin/Narmin.jpeg",
+    imageAlt: "Portrait of Narmin Alizada",
+    description: [
+      "As a Business Research & Strategy Lead, I focus on the relationship between business practices, economic decision-making, and sustainable development. I am particularly interested in how organizations evaluate opportunities, allocate resources, respond to market conditions, and create long-term value.",
+      "Growing up at the intersection of Azerbaijani and Egyptian cultures has shaped my curiosity about how different environments influence economic behavior, consumer perspectives, and business opportunities. This perspective has encouraged me to look beyond the surface of business decisions and consider the broader economic and social factors that shape them.",
+      "Through my work with Youth Collective, I aim to explore real-world business challenges through research, critical analysis, and strategic thinking. My goal is to connect practical observations with broader questions about economics, entrepreneurship, and sustainable growth, encouraging young people to approach complex challenges with an analytical mindset and a deeper understanding of how business decisions influence the world around them."
+    ]
+  },
+  "fatima-ismayilzada": {
+    name: "Fatima Ismayilzada",
+    title: "Creative Expression & Gender Representation Ambassador",
+    lead: "Who gets to tell a girl’s story?",
+    image: "assets/images/Team%20members/Fatya/Fatima.jpeg",
+    imageAlt: "Portrait of Fatima Ismayilzada",
+    description: [
+      "Fatima connects music, writing and psychology through a question that runs across all three: how do we come to understand another person?",
+      "Her background in flute, piano, choir and collaborative performance informs her interest in listening, interpretation and the emotional life of language.",
+      "Within The Youth Collective, she explores how stories shape expectations of girls and young women: whose experiences are heard, which stereotypes are repeated, and what gets lost when someone else does the telling.",
+      "Through planned interviews, essays and collaborative media projects, she hopes to give girls room to describe their lives in their own words, while examining how tone, imagery and framing influence an audience’s response.",
+      "Her aim is to make creative work that invites closer listening and leaves room for people to be more complicated than the stories told about them."
+    ]
+  },
   // Add the next member with a new URL key, then link to member.html?id=that-key.
   "human-centered-technology": {
     name: "Youssef El Haroun",
