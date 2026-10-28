@@ -1,4 +1,39 @@
 const memberProfiles = {
+  "leyli-dadashova": {
+    name: "Leyli Dadashova",
+    title: "Youth Researcher in Psychology and Emotional Communication",
+    lead: "Helping young people find language for what they usually keep silent.",
+    image: "assets/images/Team%20members/Leyli/image.png",
+    imageAlt: "Portrait of Leyli Dadashova",
+    description: [
+      "As a Youth Researcher in Psychology, I study why people stay silent about what matters most to them, and what makes speaking possible. My interest began personally: I noticed that the people around me, especially creative ones, turned to art instead of words — and that I was doing the same.",
+      "Today I research how the perceived shame of a topic shapes whether a person reaches out for help at all, interview practicing specialists, and build archives that let people recognize their own feelings through art, music, and language. Through the Youth Collective, my goal is to help young people name what they feel and understand that silence is not the only option available to them."
+    ]
+  },
+  "farida-ibrahimli": {
+    name: "Farida Ibrahimli",
+    title: "Head of Design, The Youth Collective Azerbaijan",
+    lead: "What do we lose when we stop noticing the things around us?",
+    image: "assets/images/Team%20members/Farida/WhatsApp%20Image%202026-10-24%20at%2014.42.49.jpeg",
+    imageAlt: "Portrait of Farida Ibrahimli",
+    description: [
+      "Final-year student, artist, and aspiring economist. I lead the creative direction of The Youth Collective and work at the intersection of art, economics, and cultural preservation. My projects explore the things we tend to overlook: from The Unpriced Atlas, a three-year visual archive examining the economic and cultural value of Azerbaijan's heritage, to my solo exhibition, Guest in the Land of Fire, featuring 28 paintings inspired by Azerbaijani culture.",
+      "Through the Lumiere Research Program, I researched arts-led gentrification in Brooklyn and Berlin, examining how the same creativity that brings neighborhoods to life can eventually make them unaffordable for the communities that shaped them. I'm also a co-founder of FANI, an online school making education more accessible to children with learning differences.",
+      "I have always been interested in the space between what we can measure and what we actually value. Whether I'm painting, researching, or designing, I keep coming back to one question: how much of the world do we fail to appreciate simply because we've stopped looking closely?"
+    ]
+  },
+  "nihal-alakbarova": {
+    name: "Nihal Alakbarova",
+    title: "Chief Sustainability Officer",
+    lead: "Connecting botany, science, and communities to protect biodiversity.",
+    image: "assets/images/Team%20members/Nihal/WhatsApp%20Image%202026-10-17%20at%2014.38.02.jpeg",
+    imageAlt: "Portrait of Nihal Alakbarova",
+    description: [
+      "As a Chief Sustainability Officer, I delve into how flora, ecological systems, as well as scientific research can provide aid to create healthier and more sustainable communities. I am greatly fascinated in understanding how knowledge in the botanical field can be combined with technology, education, and environmental modernization to protect biodiversity and also strengthen the relationship between people and nature.",
+      "My curiosity towards botany has been present even during the sweet days of childhood. I was inspired by the beautiful colors of the garden in which I spent time observing different kinds of plants and their changing seasons. That early passion has grown into a lasting appreciation for ecosystems, biodiversity, and of course, the vital role that vegetation plays in supporting life on Earth.",
+      "I strongly support the idea that environmental solutions should be practical, based on science, and should be accepted by everyone. Protecting biodiversity in not only the responsibility of scientists, it also depends on various elements like: education, public awareness, and empowering young people courages enough to point put an issue and take action to eradicate it. Through Youth Collective, I aim to enflame curiosity about botany, encourage environmental management and promote cutting-edge ideas that help communities adapt to a changing climate while preserving the natural world for generations to come."
+    ]
+  },
   "jamal-naghizade": {
     name: "Jamal Naghizade",
     title: "Youth Feminism and Women’s Rights Ambassador",
