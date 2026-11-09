@@ -82,6 +82,18 @@ const memberProfiles = {
       "As a Youth Anthropology and Human-Centered Technology Ambassador, I focus on the relationship between people, culture, and innovation. I believe that technology becomes more meaningful when it begins with an understanding of how individuals live, communicate, preserve traditions, and experience the world around them.",
       "Growing up at the intersection of American, Azerbaijani, and Egyptian cultures has shaped the way I approach both people and ideas. Being exposed to different languages, customs, values, and social environments taught me to listen carefully, adapt to unfamiliar perspectives, and recognize that the same challenge may be understood differently across communities.",
       "Through my role in Youth Collective, I aim to encourage young people to approach engineering and technology with curiosity, empathy, and cultural awareness. My goal is to help build a community in which technical creativity is guided by real human experiences and where cultural differences are treated not as barriers, but as sources of insight, collaboration, and innovation."
+    ],
+    accomplishments: [
+      {
+        title: "People, Patterns & Prototypes",
+        date: "Lead Co-Founder · Director of Engineering and Program Development",
+        summary: "Youssef developed the concept for Youth Collective’s engineering workshop and mentorship program, structured its activities, and introduced reverse engineering as the way to teach it: demonstrating real prototypes, opening them up with students, and guiding them through the engineering development process. He organizes the workshops, coordinates mentorship, and helps student teams progress from initial ideas toward working prototypes. Co-founded with Mikayil Ahmadbayli, Jeyla Ahmadzada, Ilyas Taghiyev and Vahid Musayev. So far: 4 workshops and 65 students engaged; 3 prototypes developed by mentored student teams, which have served 452 people. See the full story on Our Impact.",
+        images: [
+          "assets/images/Our%20impact/ImagesProjects/human%20eng%20workshop/workshop-prototype-demo.jpeg",
+          "assets/images/Our%20impact/ImagesProjects/human%20eng%20workshop/workshop-explaining-components.jpeg",
+          "assets/images/Our%20impact/ImagesProjects/human%20eng%20workshop/workshop-mentoring-students.jpeg"
+        ]
+      }
     ]
   },
   "vahid-musayev": {
@@ -122,14 +134,29 @@ const memberProfiles = {
   },
   "ilyas-taghiyev": {
     name: "Ilyas Taghiyev",
-    title: "Youth Data Science Educator and Mentorship Ambassador",
-    lead: "Helping younger students discover data science through curiosity, confidence, and practical learning.",
+    title: "Youth Data Science Educator & Children’s Learning Ambassador",
+    lead: "Turning numbers into a language every child can speak.",
     image: "assets/images/Team%20members/Ilyas%20Taghiyev/Image5.jpeg",
     imageAlt: "Portrait of Ilyas Taghiyev",
     description: [
-      "As a Youth Data Science Educator and Mentorship Ambassador, I focus on helping younger students understand data science, technology, and analytical thinking in a way that feels accessible, engaging, and relevant to everyday life.",
-      "I believe education should encourage curiosity, build confidence, and help young people recognize their own ability to solve problems. A strong mentor does not simply provide answers, but guides students as they ask questions, test ideas, learn from mistakes, and develop independent ways of thinking.",
-      "Through Youth Collective, I aim to introduce children and younger students to data science through interactive workshops, relatable examples, educational activities, and beginner-friendly projects. My goal is to create a supportive environment where students feel comfortable exploring unfamiliar ideas and seeing technology as something they can understand, use, and eventually build themselves."
+      "Ilyas is a young educator and data enthusiast from Baku whose work is guided by one idea: no child should grow up believing they are “not a math person.” He creates learning experiences for children and teenagers who often feel left behind by traditional lessons, including children with attention difficulties, younger students discovering technology for the first time and teens who are told what to think instead of how to think.",
+      "At Youth Collective, Ilyas brings data science out of the classroom and into everyday life. His workshops connect ecology, sport and health with questions young people genuinely care about: Is our park getting cleaner? Does exercise really change how we feel? Can we trust what we read online? Participants learn to collect their own observations, look for patterns, test popular claims and use AI tools critically rather than blindly. The goal is not to produce statisticians, but confident young people who instinctively ask, “How do we know that?”",
+      "Beyond Youth Collective, Ilyas has developed hands-on math programs for children with ADHD, cybersecurity lessons for primary-school pupils and science activities for younger students. Across all of them, he follows the same principle: start with the child, not the curriculum. Instead of long explanations, he builds short, tactile tasks that children can draw, cut, build and choose for themselves, and he mentors other teenagers to lead these sessions with care.",
+      "Ilyas sees every lesson as a small experiment. He plans carefully, observes closely and is willing to change course when children show him something the plan did not expect. As a student of statistics, he knows that an average can look like success while hiding those who were left behind, so he pays attention to the quietest learner in the room as much as to the loudest.",
+      "Ilyas believes that learning should feel like discovery, not obligation. He hopes to help build a generation of young people who are curious about data, kind in how they use it and brave enough to keep asking “why?”",
+      "Focus areas: Data Science · Statistics · Children’s Education · Inclusive Learning · Youth Mentorship · Critical Thinking"
+    ],
+    accomplishments: [
+      {
+        title: "MathRoutes",
+        date: "Featured project · Mentioned on Mədəniyyət TV, 31.10.2026",
+        summary: "A free, non-profit math program for children aged 7–9 with ADHD, built around interactive paper cards that children color, draw on, cut out and arrange. Sessions are led by trained school-age mentors with a teacher present, and each one follows the same rhythm, ending with the question: “What helped you today?” After sessions with children, the cards are being reworked from their feedback, with the full set and a mentor’s guide to be published free. Visit mathroutes.vercel.app or see the full story on Our Impact.",
+        images: [
+          "assets/images/Our%20impact/ImagesProjects/mathroutes/class-mentor-shows-card-800.webp",
+          "assets/images/Our%20impact/ImagesProjects/mathroutes/wall-chalk-girl-800.webp",
+          "assets/images/Our%20impact/ImagesProjects/mathroutes/table-card-closeup-800.webp"
+        ]
+      }
     ]
   },
   "zahra-nasibli": {
@@ -178,6 +205,31 @@ const memberProfiles = {
       "As our Data Visualization and Financial Analytics Lead, I am passionate about turning complex datasets into clear visual stories. I believe that spreadsheets and reports should never be confusing—the most powerful insights emerge when financial logic is paired with intuitive, accessible design.",
       "My experience in analytics, data management, and financial tracking has shown me how thoughtful presentation can clear the chaos out of raw statistics. Whether managing project budgets, structuring data flow, or designing clean diagrams, I am driven by precision, structure, and a commitment to making information understandable at a glance.",
       "Through my role in Youth Collective, I aim to help our team connect calculations with action. My mission is to ensure that data empowers every member to see the bigger picture, make informed decisions, and grow our shared projects with confidence."
+    ]
+  },
+  "farah-ahmadova": {
+    name: "Farah Ahmadova",
+    title: "Youth Climate Action & Sustainability Advocate",
+    lead: "Bringing environmental evidence and youth participation into climate action.",
+    image: "assets/images/Team%20members/Farah/image.png",
+    imageAlt: "Portrait of Farah Ahmadova",
+    description: [
+      "Farah Ahmadova is Project Lead of Youth Collective, where her work connects environmental observation, data analysis, and community engagement. Through Youth as Catalysts for Climate Action, presented at COP29 in collaboration with UNFPA Azerbaijan, she helped coordinate three youth groups and develop training-of-trainers sessions. She also supported initiatives combining environmental monitoring with nature-based solutions.",
+      "This experience has shaped her interest in how evidence gathered by communities can inform climate decisions. She is particularly interested in how young people can document local environmental challenges, interpret their findings, and use them in discussions with institutions. Her focus is on making youth participation a practical part of how climate priorities are identified and addressed."
+    ],
+    accomplishments: [
+      {
+        title: "Youth as Catalysts for Climate Action · COP29",
+        date: "20 November 2024 · Children and Youth Pavilion, COP29 Baku",
+        summary: "In its Letter of Appreciation to Youth Collective, UNFPA Azerbaijan gave Farah particular recognition as Project Lead for coordinating the initiative from its initial concept through to its presentation at COP29: coordinating the work of three youth groups, developing training-of-trainers sessions, and reporting on the project's progress to the national coordinator.",
+        documents: [
+          {
+            title: "UNFPA Azerbaijan Letter of Appreciation, 10 December 2024",
+            image: "assets/images/Our%20impact/letter%20of%20appreciation%20unfpa.jpeg",
+            href: "assets/images/Our%20impact/ImagesProjects/Letter%20of%20Appreciation%20stamp.pdf"
+          }
+        ]
+      }
     ]
   },
   "nijat-shikhaliyev": {

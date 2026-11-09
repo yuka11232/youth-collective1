@@ -28,6 +28,22 @@ if (counterArea) {
 const joinForm = document.querySelector('[data-join-form]');
 if (joinForm) {
   const status = document.querySelector('[data-form-status]');
+  const interestSelect = joinForm.querySelector('[data-interest-select]');
+  const messageField = joinForm.querySelector('[data-interest-message]');
+
+  // Each interest option carries its own message prompt; homepage cards link here with ?interest=<slug>.
+  const syncInterestHint = () => {
+    const hint = interestSelect?.selectedOptions[0]?.dataset.hint;
+    if (messageField && hint) messageField.placeholder = hint;
+  };
+
+  if (interestSelect) {
+    const requested = new URLSearchParams(window.location.search).get('interest');
+    const match = Array.from(interestSelect.options).find((option) => option.dataset.slug === requested);
+    if (match) interestSelect.value = match.value;
+    syncInterestHint();
+    interestSelect.addEventListener('change', syncInterestHint);
+  }
   joinForm.addEventListener('submit', async (event) => {
     event.preventDefault();
 
@@ -49,6 +65,7 @@ if (joinForm) {
       status.textContent = data.message || 'Thank you. Your interest has been saved.';
       window.YCBackend.toast('Message saved.', 'success');
       joinForm.reset();
+      syncInterestHint();
     } catch (error) {
       status.textContent = error.message || 'Could not save your message yet.';
     }
@@ -75,25 +92,25 @@ function initHomeInteractions() {
       const yPercent = (y / rect.height - 0.5) * 2;
 
       heroVisual.classList.add('is-interacting');
-      heroVisual.style.setProperty('--run-x', `${xPercent * 14}px`);
-      heroVisual.style.setProperty('--run-y', `${yPercent * 14}px`);
-      heroVisual.style.setProperty('--eco-x', `${xPercent * -10.5}px`);
-      heroVisual.style.setProperty('--eco-y', `${yPercent * -10.5}px`);
-      heroVisual.style.setProperty('--health-x', `${xPercent * 7.7}px`);
-      heroVisual.style.setProperty('--health-y', `${yPercent * -7.7}px`);
+      heroVisual.style.setProperty('--learn-x', `${xPercent * 14}px`);
+      heroVisual.style.setProperty('--learn-y', `${yPercent * 14}px`);
+      heroVisual.style.setProperty('--build-x', `${xPercent * -10.5}px`);
+      heroVisual.style.setProperty('--build-y', `${yPercent * -10.5}px`);
+      heroVisual.style.setProperty('--mentor-x', `${xPercent * 7.7}px`);
+      heroVisual.style.setProperty('--mentor-y', `${yPercent * -7.7}px`);
       glow.style.left = `${x}px`;
       glow.style.top = `${y}px`;
     });
 
     heroVisual.addEventListener('pointerleave', () => {
       heroVisual.classList.remove('is-interacting');
-      ['--run-x', '--run-y', '--eco-x', '--eco-y', '--health-x', '--health-y'].forEach((property) => {
+      ['--learn-x', '--learn-y', '--build-x', '--build-y', '--mentor-x', '--mentor-y'].forEach((property) => {
         heroVisual.style.removeProperty(property);
       });
     });
   }
 
-  const tiltCards = document.querySelectorAll('.focus-card, .event-preview-card, .principle-grid article');
+  const tiltCards = document.querySelectorAll('.program-card, .event-preview-card, .principle-grid article');
   tiltCards.forEach((card) => {
     card.classList.add('tilt-ready');
 
