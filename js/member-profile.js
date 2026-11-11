@@ -211,7 +211,7 @@ const memberProfiles = {
     name: "Farah Ahmadova",
     title: "Youth Climate Action & Sustainability Advocate",
     lead: "Bringing environmental evidence and youth participation into climate action.",
-    image: "assets/images/Team%20members/Farah/image.png",
+    image: "assets/images/Team%20members/Farah/Image.jpeg",
     imageAlt: "Portrait of Farah Ahmadova",
     description: [
       "Farah Ahmadova is Project Lead of Youth Collective, where her work connects environmental observation, data analysis, and community engagement. Through Youth as Catalysts for Climate Action, presented at COP29 in collaboration with UNFPA Azerbaijan, she helped coordinate three youth groups and develop training-of-trainers sessions. She also supported initiatives combining environmental monitoring with nature-based solutions.",
@@ -230,6 +230,17 @@ const memberProfiles = {
           }
         ]
       }
+    ]
+  },
+  "aydan-nuriyeva": {
+    name: "Aydan Nuriyeva",
+    title: "Sport Economics and Inclusion Research Ambassador",
+    lead: "Exploring how sport connects with economics, cities and opportunity.",
+    image: "assets/images/Team%20members/Aydan/Aydan-portrait.jpeg",
+    imageAlt: "Portrait of Aydan Nuriyeva",
+    description: [
+      "As a Sport Economics and Inclusion Research Ambassador, I explore how sport connects with economics, cities and opportunity. I am an athlete who became curious about the systems behind sport, and I use research and leadership to ask how those systems can open access for young people.",
+      "Through Youth Collective, I contribute to the Olympic Inclusion Lab, where young people serve as leaders, Inclusion Ambassadors, peer mentors and researchers."
     ]
   },
   "nijat-shikhaliyev": {

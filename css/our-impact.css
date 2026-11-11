@@ -627,6 +627,26 @@
   font-size: 0.95rem;
 }
 
+/* Team member credit (photo + copy) */
+.member-credit {
+  display: grid;
+  grid-template-columns: minmax(160px, 220px) minmax(0, 1fr);
+  gap: clamp(1.2rem, 3vw, 2.2rem);
+  align-items: center;
+}
+.member-credit-photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  display: block;
+}
+.member-credit .lead-credit-note {
+  margin-top: 1.2rem;
+}
+
 @media (max-width: 900px) {
   .unfpa-layout {
     grid-template-columns: minmax(0, 1fr);
@@ -635,6 +655,12 @@
 @media (max-width: 620px) {
   .lead-credit {
     padding: 1.8rem 1.4rem;
+  }
+  .member-credit {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .member-credit-photo {
+    max-width: 220px;
   }
 }
 

@@ -8,7 +8,6 @@
 .member-photo-frame img, .profile-photo-panel img { width: 100%; height: 100%; display: block; object-fit: cover; transition: transform .5s ease; }
 .member-photo-frame img { object-position: center 28%; }
 .member-photo-frame img.member-photo-vahid { object-position: center 22%; }
-.member-photo-frame img.member-photo-farah { object-position: center 4%; }
 .featured-member-card:hover .member-photo-frame img { transform: scale(1.035); }
 .featured-member-copy { max-width: 720px; }
 .member-name { margin: 0 0 .45rem; font-size: clamp(1.7rem,3vw,2.5rem); line-height: 1.05; }
